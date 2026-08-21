@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vega Prastia | Digital Marketing Portfolio & Performance</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#0B132B',
+                            dark: '#050814',
+                            light: '#1C2541',
+                            accent: '#3A506B'
+                        },
+                        gold: {
+                            DEFAULT: '#C5A059',
+                            light: '#E2C98A',
+                            dark: '#9A7B38',
+                            muted: '#F4EAD2'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #C5A059 0%, #E2C98A 50%, #9A7B38 100%);
+        }
+        .navy-gradient {
+            background: linear-gradient(135deg, #0B132B 0%, #1C2541 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-gold/30 selection:text-navy">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#hero" class="flex items-center space-x-2 group">
+                <div class="w-10 h-10 rounded-full navy-gradient text-gold flex items-center justify-center font-bold text-lg shadow-md group-hover:scale-105 transition-transform">
+                    VP
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-navy tracking-tight text-lg leading-tight">Vega Prastia</span>
+                    <span class="text-xs text-gold-dark font-medium tracking-wider uppercase">Digital Marketing</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center space-x-6 font-medium text-sm text-slate-600">
+                <a href="#about" class="hover:text-gold-dark transition-colors">About</a>
+                <a href="#experience" class="hover:text-gold-dark transition-colors">Experience</a>
+                <a href="#performance" class="hover:text-gold-dark transition-colors">Performance</a>
+                <a href="#content-plans" class="hover:text-gold-dark transition-colors">Content Brief Plan</a>
+                <a href="#skills" class="hover:text-gold-dark transition-colors">Skills</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full navy-gradient text-white text-sm font-semibold shadow-sm hover:shadow-md hover:bg-navy-light transition-all">
+                    Contact Me
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" aria-label="Toggle Menu" class="md:hidden text-navy focus:outline-none p-2 rounded-lg hover:bg-slate-100 transition-colors">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 shadow-lg">
+            <a href="#about" class="block text-slate-700 font-medium py-2 hover:text-gold-dark transition-colors">About</a>
+            <a href="#experience" class="block text-slate-700 font-medium py-2 hover:text-gold-dark transition-colors">Experience</a>
+            <a href="#performance" class="block text-slate-700 font-medium py-2 hover:text-gold-dark transition-colors">Performance Dashboard</a>
+            <a href="#content-plans" class="block text-slate-700 font-medium py-2 hover:text-gold-dark transition-colors">Content Brief Plan</a>
+            <a href="#skills" class="block text-slate-700 font-medium py-2 hover:text-gold-dark transition-colors">Skills</a>
+            <a href="#contact" class="block text-center w-full py-2.5 rounded-lg navy-gradient text-white font-medium shadow">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden bg-gradient-to-b from-slate-100 via-white to-slate-50">
+        <div class="absolute top-0 right-0 -z-10 w-96 h-96 bg-gold/10 rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/4"></div>
+        <div class="absolute bottom-0 left-0 -z-10 w-96 h-96 bg-navy/5 rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/4"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-gold-muted/50 border border-gold/30 text-gold-dark text-xs font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-chart-line text-xs"></i>
+                        <span>Digital Marketing | Social Media | Content Strategy</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-navy tracking-tight leading-tight">
+                        Hi, I'm <span class="text-transparent bg-clip-text gold-gradient">Vega Prastia</span>
+                    </h1>
+                    <p class="text-lg font-medium text-gold-dark">
+                        Turning Ideas into Digital Impact.
+                    </p>
+                    <p class="text-base sm:text-lg text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Marketing professional with hands-on experience in digital marketing, social media management, content planning, marketing communication, and campaign execution. Combining creative thinking, audience understanding, and data-driven analysis to develop effective digital strategies and engaging content.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#performance" class="w-full sm:w-auto px-8 py-3.5 rounded-xl navy-gradient text-white font-medium text-center shadow-lg hover:shadow-xl hover:translate-y-[-2px] transition-all flex items-center justify-center space-x-2">
+                            <span>View Performance Metrics</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#content-plans" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-white border-2 border-slate-300 text-navy font-medium text-center hover:border-gold hover:text-gold-dark transition-all">
+                            Explore Content Briefs
+                        </a>
+                    </div>
+                    <div class="pt-6 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-slate-500 text-sm">
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-location-dot text-gold"></i>
+                            <span>Bandar Lampung, Lampung</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-envelope text-gold"></i>
+                            <span>vegaprastia88@gmail.com</span>
+                        </div>
+                    </div>
+                    <!-- Interests Tagline -->
+                    <div class="pt-2 text-xs text-slate-500 font-medium">
+                        Digital Marketing • Social Media Trends • Content Strategy • KOL & Influencer Marketing • E-Commerce • Audience Engagement
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+                        <div class="absolute inset-0 rounded-3xl navy-gradient transform rotate-6 scale-95 opacity-20"></div>
+                        <div class="absolute inset-0 rounded-3xl border-2 border-gold/40 transform -rotate-3 scale-100"></div>
+                        <div class="relative w-full h-full rounded-3xl bg-white shadow-2xl overflow-hidden border border-slate-200 flex flex-col items-center justify-center p-8 text-center group">
+                            <div class="w-32 h-32 rounded-full overflow-hidden border-3 border-gold shadow-lg mb-4 bg-slate-100">
+                                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAACAQABAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA=" alt="Vega Prastia" class="w-full h-full object-cover object-top">
+                            </div>
+                            <h2 class="text-xl font-bold text-navy">Vega Prastia</h2>
+                            <p class="text-xs text-slate-500 mt-1">Digital Marketing Specialist</p>
+                            <div class="mt-4 flex space-x-3">
+                                <a href="mailto:vegaprastia88@gmail.com" aria-label="Email" class="w-10 h-10 rounded-full bg-slate-100 text-navy hover:bg-gold hover:text-white flex items-center justify-center transition-colors">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                                <a href="tel:0895417658095" aria-label="Phone" class="w-10 h-10 rounded-full bg-slate-100 text-navy hover:bg-gold hover:text-white flex items-center justify-center transition-colors">
+                                    <i class="fa-solid fa-phone"></i>
+                                </a>
+                                <a href="#performance" aria-label="Performance" class="w-10 h-10 rounded-full bg-slate-100 text-navy hover:bg-gold hover:text-white flex items-center justify-center transition-colors">
+                                    <i class="fa-solid fa-chart-pie"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-gold-dark bg-gold-muted/50 px-3 py-1 rounded-full">About Me</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy mt-3">Professional Profile & Background</h2>
+                <div class="w-16 h-1 bg-gold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <h3 class="text-2xl font-bold text-navy leading-snug">
+                        Passionate about crafting creative content and building impactful digital brand presence.
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        I am a marketing professional with experience in digital marketing, social media management, content planning, marketing communication, and customer engagement. During my internship at DigiBuddy ID, I worked on the O2 Event Organizer project, where I contributed to digital marketing strategies, social media content planning, audience communication, and market research.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        My experience also includes administrative operations and customer-facing roles, which strengthened my attention to detail, communication, problem-solving, and organizational skills. I am interested in digital marketing, social media, content strategy, KOL and influencer marketing, and e-commerce operations.
+                    </p>
+                    
+                    <div class="pt-4 grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <span class="block text-2xl font-bold text-navy">Bachelor</span>
+                            <span class="text-xs text-slate-500 font-medium">Islamic Communication & Broadcasting</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <span class="block text-2xl font-bold text-navy">3.74 / 4.00</span>
+                            <span class="text-xs text-slate-500 font-medium">University GPA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm space-y-4">
+                        <div class="flex items-center space-x-3 text-navy font-bold text-lg border-b border-slate-200 pb-3">
+                            <div class="w-10 h-10 rounded-lg gold-gradient flex items-center justify-center text-white">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <span>Education Background</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy text-base">Islamic State University of Raden Intan Lampung</h4>
+                            <p class="text-sm text-gold-dark font-medium mt-0.5">Bachelor of Social — Islamic Communication and Broadcasting</p>
+                            <p class="text-xs text-slate-500 mt-1"><i class="fa-regular fa-calendar mr-1"></i> 2022 – 2026 | GPA: 3.74 / 4.00</p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm space-y-4">
+                        <div class="flex items-center space-x-3 text-navy font-bold text-lg border-b border-slate-200 pb-3">
+                            <div class="w-10 h-10 rounded-lg gold-gradient flex items-center justify-center text-white">
+                                <i class="fa-solid fa-language"></i>
+                            </div>
+                            <span>Key Highlights</span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-slate-600">
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                <span><strong>Languages:</strong> Indonesian (Active), English (Intermediate)</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                <span>Data-driven performance tracking across Instagram, TikTok, and Facebook.</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                <span>Consistent execution of monthly content calendars and copywriting briefs.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Projects Section -->
+    <section id="experience" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-gold-dark bg-gold-muted/50 px-3 py-1 rounded-full">Career Journey</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy mt-3">Professional Experience & Projects</h2>
+                <div class="w-16 h-1 bg-gold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1: DigiBuddy ID -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-navy/10 text-navy text-xs font-semibold rounded-full">Digital Marketing Intern</span>
+                            <span class="text-xs font-medium text-slate-500">June 2025 – September 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy">DigiBuddy ID</h3>
+                        <p class="text-xs text-gold-dark font-medium mt-1">Project: O2 Event Organizer</p>
+                        <ul class="mt-4 space-y-2.5 text-sm text-slate-600">
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs shrink-0"></i>
+                                <span>Developed and executed digital marketing strategies for O2 Event Organizer to increase brand awareness and promote its services.</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs shrink-0"></i>
+                                <span>Planned, organized, and analyzed content across Instagram, TikTok, and website to increase audience engagement.</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs shrink-0"></i>
+                                <span>Managed digital communication with audiences and supported promotional campaigns through organic and paid social media activities.</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs shrink-0"></i>
+                                <span>Conducted market and social media research to identify current trends and optimize content strategies based on audience behavior.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap gap-1.5">
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs rounded-md">Social Media</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs rounded-md">O2 Event Org</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs rounded-md">Campaigns</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Tribun Lampung -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-navy/10 text-navy text-xs font-semibold rounded-full">Front Office Intern</span>
+                            <span class="text-xs font-medium text-slate-500">July 2025 – August 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy">Tribun Lampung</h3>
+                        <p class="text-xs text-gold-dark font-medium mt-1">Media Operations & Administration</p>
+                        <ul class="mt-4 space-y-2.5 text-sm text-slate-600">
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs shrink-0"></i>
+                                <span>Managed customer requests related to advertising placement through online and offline communication.</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs shrink-0"></i>
+                                <span>Processed and updated 300+ customer records and advertising data through the Coretax system with high accuracy.</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs shrink-0"></i>
+                                <span>Prepared invoices, maintained administrative documents, and organized records to support efficient daily operations.</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs shrink-0"></i>
+                                <span>Supported promotional content activities and assisted customers with information related to advertising services.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap gap-1.5">
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs rounded-md">Customer Service</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs rounded-md">Coretax Admin</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs rounded-md">Media</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Pt. Vivo Communication Indonesia -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-navy/10 text-navy text-xs font-semibold rounded-full">Sales / Promoter</span>
+                            <span class="text-xs font-medium text-slate-500">February 2021 – January 2022</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy">Pt. Vivo Communication Indonesia</h3>
+                        <p class="text-xs text-gold-dark font-medium mt-1">Sales & Customer Relations</p>
+                        <ul class="mt-4 space-y-2.5 text-sm text-slate-600">
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs shrink-0"></i>
+                                <span>Achieved 120% of sales quota within three months through effective customer engagement and consultative selling.</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs shrink-0"></i>
+                                <span>Conducted product presentations and tailored recommendations based on customer needs, contributing to a 15% increase in sales conversion.</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs shrink-0"></i>
+                                <span>Built and maintained customer relationships, achieving an average customer satisfaction rating of 4.8/5.</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-gold mt-1 text-xs shrink-0"></i>
+                                <span>Followed up with customers through WhatsApp and social media, contributing to a 20% increase in repeat-order sales.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap gap-1.5">
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs rounded-md">Sales 120%</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs rounded-md">CRM</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs rounded-md">Presentation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Performance Analysis & Reporting Section -->
+    <section id="performance" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-gold-dark bg-gold-muted/50 px-3 py-1 rounded-full">Analytics & Metrics</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy mt-3">Social Media Performance Analysis & Reporting</h2>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base">A sample social media performance dashboard created to demonstrate skills in data analysis, performance monitoring, reporting, and data visualization across multiple social media platforms.</p>
+                <div class="w-16 h-1 bg-gold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Top Metric Cards Grid (6 cards: Followers, Impressions, Clicks, Likes, Shares, Engagement Rate) -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-center shadow-xs">
+                    <span class="block text-xs uppercase font-semibold text-slate-400 tracking-wider">Total Followers</span>
+                    <span class="block text-2xl sm:text-3xl font-extrabold text-navy mt-2">1,715</span>
+                    <span class="text-[10px] text-emerald-600 font-medium mt-1 block"><i class="fa-solid fa-arrow-trend-up"></i> Multi-Platform</span>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-center shadow-xs">
+                    <span class="block text-xs uppercase font-semibold text-slate-400 tracking-wider">Total Impressions</span>
+                    <span class="block text-2xl sm:text-3xl font-extrabold text-navy mt-2">1,345</span>
+                    <span class="text-[10px] text-slate-500 font-medium mt-1 block">Campaign Views</span>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-center shadow-xs">
+                    <span class="block text-xs uppercase font-semibold text-slate-400 tracking-wider">Total Clicks</span>
+                    <span class="block text-2xl sm:text-3xl font-extrabold text-navy mt-2">11</span>
+                    <span class="text-[10px] text-slate-500 font-medium mt-1 block">CTR: 0.82%</span>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-center shadow-xs">
+                    <span class="block text-xs uppercase font-semibold text-slate-400 tracking-wider">Total Likes</span>
+                    <span class="block text-2xl sm:text-3xl font-extrabold text-navy mt-2">46</span>
+                    <span class="text-[10px] text-slate-500 font-medium mt-1 block">User Interactions</span>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-center shadow-xs">
+                    <span class="block text-xs uppercase font-semibold text-slate-400 tracking-wider">Total Shares</span>
+                    <span class="block text-2xl sm:text-3xl font-extrabold text-navy mt-2">7</span>
+                    <span class="text-[10px] text-slate-500 font-medium mt-1 block">Content Virality</span>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-center shadow-xs">
+                    <span class="block text-xs uppercase font-semibold text-slate-400 tracking-wider">Engagement Rate</span>
+                    <span class="block text-2xl sm:text-3xl font-extrabold text-gold-dark mt-2">4.54%</span>
+                    <span class="text-[10px] text-slate-600 font-medium mt-1 block">Overall Engagement Rate</span>
+                </div>
+            </div>
+
+            <!-- Platform Breakdown Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Instagram -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm space-y-4">
+                    <div class="flex justify-between items-center border-b border-slate-200 pb-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-xl bg-pink-100 text-pink-600 flex items-center justify-center text-lg font-bold">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <span class="font-bold text-navy text-lg">Instagram</span>
+                        </div>
+                        <span class="px-2.5 py-1 bg-gold/10 text-gold-dark text-xs font-bold rounded-full">ER: 8.87%</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div class="bg-white p-3 rounded-xl border border-slate-200">
+                            <span class="text-slate-400 text-xs block">Followers</span>
+                            <span class="font-bold text-navy text-base">215</span>
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200">
+                            <span class="text-slate-400 text-xs block">Impressions</span>
+                            <span class="font-bold text-navy text-base">485</span>
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200">
+                            <span class="text-slate-400 text-xs block">Likes / Comments</span>
+                            <span class="font-bold text-navy text-base">34 / 4</span>
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200">
+                            <span class="text-slate-400 text-xs block">Ad Spend</span>
+                            <span class="font-bold text-navy text-base">Rp125,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TikTok -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm space-y-4">
+                    <div class="flex justify-between items-center border-b border-slate-200 pb-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center text-lg font-bold">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </div>
+                            <span class="font-bold text-navy text-lg">TikTok</span>
+                        </div>
+                        <span class="px-2.5 py-1 bg-slate-200 text-slate-700 text-xs font-bold rounded-full">ER: 1.67%</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div class="bg-white p-3 rounded-xl border border-slate-200">
+                            <span class="text-slate-400 text-xs block">Followers</span>
+                            <span class="font-bold text-navy text-base">1,300</span>
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200">
+                            <span class="text-slate-400 text-xs block">Impressions</span>
+                            <span class="font-bold text-navy text-base">720</span>
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200">
+                            <span class="text-slate-400 text-xs block">Likes / Comments</span>
+                            <span class="font-bold text-navy text-base">8 / 2</span>
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200">
+                            <span class="text-slate-400 text-xs block">Ad Spend</span>
+                            <span class="font-bold text-navy text-base">Rp60,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facebook -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm space-y-4">
+                    <div class="flex justify-between items-center border-b border-slate-200 pb-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-lg font-bold">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <span class="font-bold text-navy text-lg">Facebook</span>
+                        </div>
+                        <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-bold rounded-full">ER: 4.29%</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div class="bg-white p-3 rounded-xl border border-slate-200">
+                            <span class="text-slate-400 text-xs block">Followers</span>
+                            <span class="font-bold text-navy text-base">200</span>
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200">
+                            <span class="text-slate-400 text-xs block">Impressions</span>
+                            <span class="font-bold text-navy text-base">140</span>
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200">
+                            <span class="text-slate-400 text-xs block">Likes / Comments</span>
+                            <span class="font-bold text-navy text-base">4 / 2</span>
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200">
+                            <span class="text-slate-400 text-xs block">Ad Spend</span>
+                            <span class="font-bold text-navy text-base">Rp50,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Brief Plan & Campaign Section -->
+    <section id="content-plans" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-gold-dark bg-gold-muted/50 px-3 py-1 rounded-full">Content Calendar</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy mt-3">Content Brief Plan & Campaign</h2>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base">Content Planning, Creative Brief & Campaign Execution managed by Vega Prastia.</p>
+                <div class="w-16 h-1 bg-gold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Campaign Category Tabs -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10">
+                <button onclick="filterCampaigns('all')" class="campaign-tab active-tab px-4 py-2 rounded-full text-xs font-bold transition-all bg-navy text-gold shadow-sm">All Briefs (15+)</button>
+                <button onclick="filterCampaigns('august')" class="campaign-tab px-4 py-2 rounded-full text-xs font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">August 2025</button>
+                <button onclick="filterCampaigns('september')" class="campaign-tab px-4 py-2 rounded-full text-xs font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">September 2025</button>
+                <button onclick="filterCampaigns('october')" class="campaign-tab px-4 py-2 rounded-full text-xs font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">October 2025</button>
+            </div>
+
+            <!-- Campaign Cards Grid -->
+            <div id="campaigns-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Brief 1: Aug 15 -->
+                <div class="campaign-card august bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="px-2.5 py-1 bg-amber-100 text-amber-800 text-xs font-semibold rounded-full">Reels | 15 Aug 2025</span>
+                            <span class="text-xs font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">DONE</span>
+                        </div>
+                        <h3 class="font-bold text-navy text-lg leading-snug">“Behind The Impact: Proses di Balik Event”</h3>
+                        <p class="text-xs text-gold-dark font-medium mt-1">Content Planner: Vega Prastia</p>
+                        <p class="text-xs text-slate-600 mt-3 line-clamp-3">Behind the scenes footage showing professional event preparation and seamless execution by the team.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs text-slate-400">TikTok / IG Reels</span>
+                        <button onclick="openCampaignModal(1)" class="px-3 py-1.5 rounded-lg navy-gradient text-white text-xs font-semibold hover:opacity-90 transition-opacity">View Outline</button>
+                    </div>
+                </div>
+
+                <!-- Brief 2: Aug 20 -->
+                <div class="campaign-card august bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="px-2.5 py-1 bg-amber-100 text-amber-800 text-xs font-semibold rounded-full">Reels | 20 Aug 2025</span>
+                            <span class="text-xs font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">DONE</span>
+                        </div>
+                        <h3 class="font-bold text-navy text-lg leading-snug">“Showcase Portfolio: 5 Signature Event Andalan”</h3>
+                        <p class="text-xs text-gold-dark font-medium mt-1">Content Planner: Vega Prastia</p>
+                        <p class="text-xs text-slate-600 mt-3 line-clamp-3">Comprehensive overview of weddings, corporate meetings, fun gatherings, and team-building events.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs text-slate-400">Portfolio Showcase</span>
+                        <button onclick="openCampaignModal(3)" class="px-3 py-1.5 rounded-lg navy-gradient text-white text-xs font-semibold hover:opacity-90 transition-opacity">View Outline</button>
+                    </div>
+                </div>
+
+                <!-- Brief 3: Aug 25 & 27 -->
+                <div class="campaign-card august bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="px-2.5 py-1 bg-amber-100 text-amber-800 text-xs font-semibold rounded-full">Stories & Carousel | Aug 25-27</span>
+                            <span class="text-xs font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">DONE</span>
+                        </div>
+                        <h3 class="font-bold text-navy text-lg leading-snug">“Recap Event: Gathering PT Nusantara & Tebak Event!”</h3>
+                        <p class="text-xs text-gold-dark font-medium mt-1">Content Planner: Vega Prastia</p>
+                        <p class="text-xs text-slate-600 mt-3 line-clamp-3">Interactive story poll connecting to corporate gathering recap post + 5 Tipe Event yang Bisa Kami Handle.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs text-slate-400">Interactive Story</span>
+                        <button onclick="openCampaignModal(2)" class="px-3 py-1.5 rounded-lg navy-gradient text-white text-xs font-semibold hover:opacity-90 transition-opacity">View Outline</button>
+                    </div>
+                </div>
+
+                <!-- Brief 4: Sep 1 & 3 -->
+                <div class="campaign-card september bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="px-2.5 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">Carousel | 1-3 Sep 2025</span>
+                            <span class="text-xs font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">DONE</span>
+                        </div>
+                        <h3 class="font-bold text-navy text-lg leading-snug">“Kenapa Butuh EO Profesional & So Sibuk Banget Sih Lu?”</h3>
+                        <p class="text-xs text-gold-dark font-medium mt-1">Content Planner: Vega Prastia</p>
+                        <p class="text-xs text-slate-600 mt-3 line-clamp-3">Educational carousel explaining the crucial value of hiring experienced event planners for corporate success.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs text-slate-400">Instagram Carousel</span>
+                        <button onclick="openCampaignModal(5)" class="px-3 py-1.5 rounded-lg navy-gradient text-white text-xs font-semibold hover:opacity-90 transition-opacity">View Outline</button>
+                    </div>
+                </div>
+
+                <!-- Brief 5: Sep 5, 8, 10 -->
+                <div class="campaign-card september bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="px-2.5 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">Reels & Carousel | Sep 5-10</span>
+                            <span class="text-xs font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">DONE</span>
+                        </div>
+                        <h3 class="font-bold text-navy text-lg leading-snug">“Checklist Event, 5 Akibat Jarang Gathering & Event Gagal”</h3>
+                        <p class="text-xs text-gold-dark font-medium mt-1">Content Planner: Vega Prastia</p>
+                        <p class="text-xs text-slate-600 mt-3 line-clamp-3">High-engagement educational series on event risk management, planning checklists, and corporate culture.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs text-slate-400">Educational Series</span>
+                        <button onclick="openCampaignModal(1)" class="px-3 py-1.5 rounded-lg navy-gradient text-white text-xs font-semibold hover:opacity-90 transition-opacity">View Outline</button>
+                    </div>
+                </div>
+
+                <!-- Brief 6: Sep 11 - Oct 09 -->
+                <div class="campaign-card september october bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="px-2.5 py-1 bg-purple-100 text-purple-800 text-xs font-semibold rounded-full">Sep 11 - Oct 09 2025</span>
+                            <span class="text-xs font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">SCHEDULED</span>
+                        </div>
+                        <h3 class="font-bold text-navy text-lg leading-snug">“EO Profesional vs Abal-abal, Tips Hemat Budget & Rundown Wajib”</h3>
+                        <p class="text-xs text-gold-dark font-medium mt-1">Content Planner: Vega Prastia</p>
+                        <p class="text-xs text-slate-600 mt-2 line-clamp-2">Campaign Schedule: September 11 – October 9, 2025. Planned during internship period.</p>
+                        <p class="text-xs text-slate-500 mt-1 italic">Campaign Planning Period: September 2025</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs text-slate-400">Full Content Plan</span>
+                        <button onclick="openCampaignModal(6)" class="px-3 py-1.5 rounded-lg navy-gradient text-white text-xs font-semibold hover:opacity-90 transition-opacity">View Outline</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- My Skills Section -->
+    <section id="skills" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-gold-dark bg-gold-muted/50 px-3 py-1 rounded-full">Expertise</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy mt-3">My Skills & Competencies</h2>
+                <div class="w-16 h-1 bg-gold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Hard Skills -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm space-y-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 rounded-xl navy-gradient text-gold flex items-center justify-center text-xl font-bold shadow">
+                            <i class="fa-solid fa-code-merge"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-navy">Technical Skills</h3>
+                            <p class="text-xs text-slate-500">Technical marketing and analytics competencies</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2.5 pt-2">
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-share-nodes text-gold"></i>
+                            <span>Social Media Management</span>
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-pen-nib text-gold"></i>
+                            <span>Content Planning & Brief Development</span>
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-chart-line text-gold"></i>
+                            <span>Social Media Analytics & Reporting</span>
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-bullseye text-gold"></i>
+                            <span>Digital Campaign Management</span>
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-file-pen text-gold"></i>
+                            <span>Copywriting & Content Strategy</span>
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-magnifying-glass text-gold"></i>
+                            <span>Market & Audience Research</span>
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-comments text-gold"></i>
+                            <span>Digital Communication</span>
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-folder-open text-gold"></i>
+                            <span>CRM & Administrative Operations</span>
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-table text-gold"></i>
+                            <span>Microsoft Office</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm space-y-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 rounded-xl navy-gradient text-gold flex items-center justify-center text-xl font-bold shadow">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-navy">Soft Skills</h3>
+                            <p class="text-xs text-slate-500">Interpersonal and professional strengths</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2.5 pt-2">
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-comments text-gold"></i>
+                            <span>Communication & Negotiation</span>
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-magnifying-glass-plus text-gold"></i>
+                            <span>Attention to Detail</span>
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-puzzle-piece text-gold"></i>
+                            <span>Problem Solving</span>
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-bolt text-gold"></i>
+                            <span>Fast Learner</span>
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-clock text-gold"></i>
+                            <span>Time Management</span>
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-face-smile text-gold"></i>
+                            <span>Customer-Oriented</span>
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-users text-gold"></i>
+                            <span>Teamwork</span>
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-navy font-semibold text-sm shadow-xs flex items-center space-x-2">
+                            <i class="fa-solid fa-arrows-split-up-and-left text-gold"></i>
+                            <span>Adaptability</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#C5A059_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-gold bg-gold/10 px-3 py-1 rounded-full border border-gold/30">Get In Touch</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Let's Work Together</h2>
+                <p class="text-slate-400 mt-2 text-sm sm:text-base">Have an opportunity or project in mind? Reach out and let's discuss how I can contribute.</p>
+                <div class="w-16 h-1 bg-gold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start max-w-5xl mx-auto">
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold border border-gold/30 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-envelope text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm text-slate-400 font-medium">Email Me</h4>
+                                <a href="mailto:vegaprastia88@gmail.com" class="text-white font-semibold hover:text-gold transition-colors">vegaprastia88@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold border border-gold/30 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-phone text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm text-slate-400 font-medium">Call / WhatsApp</h4>
+                                <a href="tel:0895417658095" class="text-white font-semibold hover:text-gold transition-colors">0895417658095</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold border border-gold/30 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm text-slate-400 font-medium">Location</h4>
+                                <span class="text-white font-semibold">Bandar Lampung, Lampung, Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-white/5 border border-slate-800 space-y-3">
+                        <h4 class="font-bold text-white text-sm">Professional Availability</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Open to full-time roles, internships, and freelance digital marketing projects. Let's create impactful campaigns together!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <form id="contact-form" class="bg-white/5 border border-slate-800 p-8 rounded-2xl space-y-6 shadow-xl">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label for="name" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Your Name</label>
+                                <input type="text" id="name" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-gold transition-colors text-sm" placeholder="John Doe">
+                            </div>
+                            <div class="space-y-2">
+                                <label for="email" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Your Email</label>
+                                <input type="email" id="email" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-gold transition-colors text-sm" placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label for="subject" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Subject</label>
+                            <input type="text" id="subject" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-gold transition-colors text-sm" placeholder="Project Inquiry / Job Opportunity">
+                        </div>
+                        <div class="space-y-2">
+                            <label for="message" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Message</label>
+                            <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-gold transition-colors text-sm resize-none" placeholder="Hello Vega, I would like to discuss..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 rounded-xl gold-gradient text-navy font-bold text-center shadow-lg hover:opacity-95 transition-all flex items-center justify-center space-x-2">
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane text-xs"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-500 py-8 border-t border-slate-900 text-center text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 Vega Prastia. All rights reserved.</p>
+            <p class="text-gold font-medium">Digital Marketing Portfolio & Analytics</p>
+        </div>
+    </footer>
+
+    <!-- Campaign Outline Modal -->
+    <div id="campaign-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-xs hidden p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 space-y-6 shadow-2xl border border-slate-100 relative">
+            <button onclick="closeCampaignModal()" class="absolute top-6 right-6 text-slate-400 hover:text-navy text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="modal-content-area" class="space-y-4">
+                <!-- Dynamic Content injected via JS -->
+            </div>
+            <button onclick="closeCampaignModal()" class="w-full py-3 rounded-xl navy-gradient text-white font-semibold text-sm shadow">
+                Close Outline
+            </button>
+        </div>
+    </div>
+
+    <!-- Custom Notification Modal -->
+    <div id="notification-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-xs hidden">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 text-center space-y-4 shadow-2xl border border-slate-100 mx-4">
+            <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mx-auto">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="text-xl font-bold text-navy">Message Sent Successfully!</h3>
+            <p id="modal-text" class="text-sm text-slate-600">Thank you for reaching out. Vega Prastia will get back to you soon.</p>
+            <button id="modal-close" class="w-full py-2.5 rounded-xl navy-gradient text-white font-semibold text-sm shadow">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on clicking links
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Campaign Filtering
+        function filterCampaigns(category) {
+            const buttons = document.querySelectorAll('.campaign-tab');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-navy', 'text-gold', 'shadow-sm');
+                btn.classList.add('bg-slate-100', 'text-slate-700');
+            });
+            event.target.classList.remove('bg-slate-100', 'text-slate-700');
+            event.target.classList.add('bg-navy', 'text-gold', 'shadow-sm');
+
+            const cards = document.querySelectorAll('.campaign-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Campaign Data Repository
+        const campaignData = {
+            1: {
+                title: "Behind The Impact: Proses di Balik Event",
+                subtitle: "Reels / TikTok Content Brief",
+                writer: "Vega Prastia",
+                slides: [
+                    "Scene 1: Visual: Tim EO setup panggung & lighting | Teks: 'Di balik kemegahan acara, ada proses yang tidak mudah.'",
+                    "Scene 2: Visual: Koordinasi vendor & briefing kru | Teks: 'Ketelitian & komunikasi adalah kunci utama kelancaran.'",
+                    "Scene 3: Visual: Senyuman klien & tamu undangan | Teks: 'Kepuasan klien adalah hasil kerja keras terbaik.'",
+                    "Scene 4: Visual: Logo O2 EO | Teks: 'Wujudkan event impianmu bersama O2 Event Organizer.'"
+                ],
+                caption: "[Behind The Impact: Proses di Balik Event]\nPernah bayangin gimana serunya tim kami mempersiapkan event dari 0 sampai sukses besar? Gak ada yang instan, semua dikerjakan dengan standar profesional!\n\n#o2eo #eoJakarta #corporategathering #teambuilding #eventplanner"
+            },
+            2: {
+                title: "Recap Event: Gathering PT Nusantara & Tebak Event!",
+                subtitle: "Stories & Carousel Strategy",
+                writer: "Vega Prastia",
+                slides: [
+                    "Slide 1: Visual: Highlight keseruan Gathering PT Nusantara | Teks: 'Recap Event: Keseruan Tanpa Batas Bersama PT Nusantara'",
+                    "Slide 2: Visual: Games interaktif & doorprize | Teks: 'Tebak Event: Seberapa seru suasana team building kami?'",
+                    "Slide 3: Visual: Testimoni klien | Teks: 'Acara sukses, klien puas, repeat order meningkat!'"
+                ],
+                caption: "[Recap Event PT Nusantara]\nThrowback sebentar ke keseruan corporate gathering kemarin! Suasana hangat, interaktif, dan penuh tawa. Mau acaramu seseru ini? Hubungi O2 EO sekarang!\n\n#O2EO #CorporateGathering #EventOrganizerLampung"
+            },
+            3: {
+                title: "5 Signature Event Andalan O2 EO",
+                subtitle: "Showcase Portfolio Carousel",
+                writer: "Vega Prastia",
+                slides: [
+                    "Slide 1: Acara penting sudah di depan mata, tapi waktu mepet?",
+                    "Slide 2: Your Dream Wedding, Our Masterpiece.",
+                    "Slide 3: Corporate Meeting, Professional & Impactful.",
+                    "Slide 4: Fun Gatherings & Team Building.",
+                    "Slide 5: Empowering MSME & Local Bazaars."
+                ],
+                caption: "[5 Signature Event Andalan O2 EO]\nDari wedding impian sampai corporate gathering berskala besar, kami siap handle tanpa ribet!\n\n#O2EventOrganizer #WeddingOrganizer #Gathering"
+            },
+            5: {
+                title: "Kenapa Butuh EO Profesional untuk Acara?",
+                subtitle: "Educational Carousel",
+                writer: "Vega Prastia",
+                slides: [
+                    "Slide 1: 'So sibuk banget sih lu sampe gak sempat urus event sendiri?'",
+                    "Slide 2: Menghemat waktu & tenaga operasional.",
+                    "Slide 3: Akses vendor terpercaya dengan harga transparan.",
+                    "Slide 4: Tim on-site handal mengatasi masalah tanpa panik.",
+                    "Slide 5: Serahkan pada ahlinya, nikmati acaranya."
+                ],
+                caption: "[Kenapa Butuh EO Profesional?]\nJangan biarkan acaramu berantakan karena diurus sendiri di tengah kesibukan. Serahkan ke O2 EO!\n\n#EOProfesional #O2EO #EventManagement"
+            },
+            6: {
+                title: "Tips Hemat Budget Tanpa Kurangi Kualitas",
+                subtitle: "Financial & Planning Brief",
+                writer: "Vega Prastia",
+                slides: [
+                    "Slide 1: Tips Hemat Budget Event Tanpa Kurangi Kualitas",
+                    "Slide 2: Tentukan skala prioritas pengeluaran.",
+                    "Slide 3: Pilih paket bundling vendor terverifikasi.",
+                    "Slide 4: Hindari vendor dadakan tanpa review jelas.",
+                    "Slide 5: Konsultasikan gratis bersama O2 EO."
+                ],
+                caption: "[Tips Hemat Budget Event]\nMau event mewah tapi tetap sesuai budget? Ini rahasianya!\n\n#EventTips #Budgeting #O2EO"
+            }
+        };
+
+        function openCampaignModal(id) {
+            const data = campaignData[id] || campaignData[1];
+            const area = document.getElementById('modal-content-area');
+            let slidesHtml = data.slides.map((s, idx) => `<div class="p-3 bg-slate-50 rounded-xl text-xs text-slate-700 border border-slate-200"><strong>Slide ${idx+1}:</strong> ${s}</div>`).join('');
+            
+            area.innerHTML = `
+                <div class="space-y-2">
+                    <span class="px-3 py-1 bg-gold/10 text-gold-dark text-xs font-bold rounded-full">Content Brief Outline</span>
+                    <h3 class="text-2xl font-bold text-navy">${data.title}</h3>
+                    <p class="text-xs text-slate-500 font-medium">Content Planner: ${data.writer} | Format: ${data.subtitle}</p>
+                </div>
+                <div class="space-y-2 pt-2">
+                    <h4 class="font-bold text-navy text-sm">Content Outline Breakdown:</h4>
+                    <div class="space-y-2 max-h-60 overflow-y-auto pr-2">
+                        ${slidesHtml}
+                    </div>
+                </div>
+                <div class="space-y-2 pt-2">
+                    <h4 class="font-bold text-navy text-sm">Copywriting & Caption:</h4>
+                    <div class="p-4 bg-slate-900 text-slate-200 rounded-xl text-xs font-mono whitespace-pre-line">
+                        ${data.caption}
+                    </div>
+                </div>
+            `;
+            document.getElementById('campaign-modal').classList.remove('hidden');
+        }
+
+        function closeCampaignModal() {
+            document.getElementById('campaign-modal').classList.add('hidden');
+        }
+
+        // Contact form submission modal handler
+        const contactForm = document.getElementById('contact-form');
+        const notificationModal = document.getElementById('notification-modal');
+        const modalClose = document.getElementById('modal-close');
+        const modalText = document.getElementById('modal-text');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            modalText.textContent = `Thank you, ${name}! Your message has been sent successfully. Vega Prastia will respond to you shortly.`;
+            notificationModal.classList.remove('hidden');
+            contactForm.reset();
+        });
+
+        modalClose.addEventListener('click', () => {
+            notificationModal.classList.add('hidden');
+        });
+
+        notificationModal.addEventListener('click', (e) => {
+            if (e.target === notificationModal) {
+                notificationModal.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
